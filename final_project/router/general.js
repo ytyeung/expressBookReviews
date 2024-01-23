@@ -30,7 +30,7 @@ public_users.get('/',function (req, res) {
           resolve(JSON.stringify(books,null,4));
     });
 
-    get_books_list.then(esults => res.status(200).send(results));
+    get_books_list.then(results => res.status(200).send(results));
     //return res.status(200).send(JSON.stringify(books,null,4));
     //return res.status(300).json({message: "Yet to be implemented"});
 });
